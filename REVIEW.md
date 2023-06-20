@@ -79,3 +79,6 @@ The "PDF to Word Converter" script exhibits good coding practices and meets the 
 
 - [PDFExtractor.py](PDFExtractor.py)
 - [readme.md](readme.md)
+
+## Authors
+Jakob & Moni
