@@ -1,48 +1,49 @@
-# PDF to Word Converter
-
-This project is a Python script that converts PDF files to Word documents. It uses the PyPDF2 library to extract text content from PDF files and the python-docx library to create Word documents.
-
-## Requirements
-
-To run the script, you need to have the following dependencies installed:
-
-- Python 3
-- PyPDF2
-- python-docx
-
-You can install the required packages using pip:
-
-pip install PyPDF2 python-docx
-
-markdown
-Copy code
-
-## Usage
-
-1. Create two subdirectories in the project directory:
-   - `Input`: Place the PDF files you want to convert in this directory.
-   - `Output`: The converted Word documents will be saved in this directory.
-
-2. Open the `PDFExtractor.py` script and modify the following variables:
-   - `pdf_directory`: Set it to the path of the `Input` subdirectory.
-   - `word_output_file`: Set it to the desired path and filename of the Word document in the `Output` subdirectory.
-
-3. Run the script:
-python PDFExtractor.py
+# Snake Game
 
 
-The script will convert the PDF files in the `Input` directory to Word documents and save them in the `Output` directory.
+## Description
+Snake Game is a classic arcade game where the player controls a snake that eats apples - in our version of this game the snake eats apple pies - and grows longer. The goal of the game is to eat as many apples (apple pies) as possible without colliding with the snake's own body. The Snake Game is implemented in Python using the Pygame library.
 
-## Notes
+## Game Features
+- The snake moves within a rectangular game field.
+- The snake grows longer when it eats an apple pie.
+- The movement direction of the snake can be controlled using the arrow keys.
+- The game ends when the snake collides with its own body.
+- If the snake exits the game field, it should appear on the opposite side at the same position.
+- After the game ends, the player can restart the game by pressing the Enter key.
+- There is a score displayed, indicating how many apple pies the snake has eaten.
+- The game background is accompanied by background music and sound effects.
+- The game uses images to represent the snake, apple pies, and background.
+- The game displays a "Game Over" message when the snake collides.
 
-- The script extracts only the text content from the PDF files. If you need to include images or preserve the formatting, you may need to use additional libraries or tools.
+## Gameplay Instructions
+1. Start the game by running the Python file.
+2. Control the snake using the arrow keys (left, right, up, down) on the game field.
+3. Eat as many apple pies as possible to score points and make the snake grow longer.
+4. Avoid collisions with the snake's own body, as this will end the game.
+5. When the game ends, press the Enter key to restart the game.
 
-- Make sure the PDF files are in a format that can be properly parsed by PyPDF2. Complex layouts or scanned PDFs may not extract text accurately.
+## Installation
+1. Make sure you have Python installed on your system.
+2. Install the Pygame library by running the following command: pip install pygame
+3. Clone or download the repository.
+4. Navigate to the repository's directory in the terminal.
+5. Run the game by executing the following command: python main.py
 
-- The script assumes that the PDF files have the `.pdf` extension. Only files with this extension will be processed.
+## Dependencies
+- Python 3.x
+- Pygame
 
-- If you encounter any issues or errors, please check the dependencies, file paths, and the format of the PDF files.
+## Author
+- Jakob, Monika
 
-## License
+## Troubleshooting
+If you encounter any issues while running the game, try the following:
+- Ensure you have the latest version of Python and Pygame installed.
+- Check that the required image and sound files are present in the correct directories.
+- Verify that your system's audio settings are configured correctly.
+- Maybe you need a creation of virtual environments (venv) to run the code.
+- Make sure your version of Python supports f-strings (Python 3.6 or later).
 
-This project is licensed under the [MIT License](LICENSE).
+
+**Have fun playing the Snake Game!**
